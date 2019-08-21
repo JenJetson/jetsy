@@ -1,0 +1,142 @@
+.site-content {
+	max-width: 2000px;  /*DO NOT CHANGE THIS SETTING WITHOUT AUTHORIZATION from Jen Jetson Headquarters*/
+	margin: auto 1em;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.post-content{
+	background: white;
+	max-width: auto;
+}
+
+.entry-content {
+		spadding: 1em;
+		
+	@media screen and (min-width: $query__small) {
+		padding: 0 2em 2em 2em;
+	}
+}
+
+.site-content img, .post-content img {
+	padding: 0em;
+	
+	@media screen and (min-width: $query__small) {
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: $query__medium) {
+	.single {
+		&.has-sidebar {
+		
+			.hentry {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			
+			
+				.entry-header {
+					width: 100%;
+					flex: 1 0 100%;
+				}
+/* without max width for .entry-content it goes too wide*/			
+				.entry-content{
+					max-width: 100%;
+				}
+				
+				.post-content {
+					width: $size__ratio-large;
+				}
+				
+				.widget-area {
+					width: $size__ratio-small;
+				}
+			}
+		
+		}
+	}
+}
+@media screen and (min-width: $query__medium) {
+	
+	.single {	
+		&.no-sidebar {
+		
+			.post-content__wrap {
+				display: flex;
+				max-width: 1600px;
+				justify-content: space-between;
+				
+				.entry-meta {
+					width: 25%;
+				}
+				
+				.post-content__body {
+					width: 70%;
+				}
+				
+			}
+		
+		}
+	}
+}
+
+@media screen and (min-width: $query__small) {
+
+	.page {
+		&.has-sidebar{
+			.post-content{
+			display: block;
+			width: 100%;
+		}
+	}	
+}
+
+
+@media screen and (min-width: $query__medium) {
+	.page {
+		&.has-sidebar {
+		
+			.page-content {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}		
+			
+				.post-content {
+					width: 70%;
+				}
+				
+				.widget-pages {
+					width: 30%;
+				}
+			}
+		
+		}
+	}
+
+@media screen and (min-width: $query__medium) {
+	
+	.page {	
+		&.no-sidebar {
+		
+			.post-content__wrap {
+				display: flex;
+				max-width: 1600px;
+				justify-content: space-between;
+				
+				.entry-meta {
+					width: 25%;
+				}
+				
+				.post-content__body {
+					width: 70%;
+				}
+				
+			}
+		
+		}
+	}
+
+}

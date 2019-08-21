@@ -1,0 +1,28 @@
+ul, ol {
+	color:  $color__list-text-filler;
+	margin: 1.8em 0 1.8em .2em;
+	line-height: 1.5em;
+	font-family: $font__box;
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}

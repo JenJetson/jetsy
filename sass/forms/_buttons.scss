@@ -1,0 +1,16 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: $color__text-blue .03em solid;
+	border-radius: .5em;
+	background: white;
+	color: $color__text-blue;
+	@include font-size(1);
+	line-height: 1;
+	padding: .5em 1em;
+}
+
+.input:hover[type="submit"]{
+	background: blue;
+}

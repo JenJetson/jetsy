@@ -1,0 +1,113 @@
+#masthead {
+	width: 100%;
+	
+ 	@media screen and (min-width: $query__large) {
+		padding: 1em;
+		}
+}
+
+.header-image {
+	max-height: 60vh; 
+	overflow: hidden;
+	
+	img {
+		display: block;
+		width: 100vw;  /*this will stretch image full screen*/
+	}
+}
+.site-header {
+	position: relative;
+	padding: 0 2em;
+	font-family: $font__headings;
+	color: #fff;
+	background-color: $color__skin;
+	
+	@media screen and (min-width: $query__medium) {
+		padding: 1em;
+	}
+}
+
+.site-branding {
+	min-height: 65px;
+	display: flex;
+}
+
+.custom-logo-link img{
+	display: none;
+}
+	
+	@media screen and (min-width: 500px){
+		.custom-logo-link img{
+		margin-right: 1em;
+		img {
+			display: block;
+			height: 65px;
+			width: auto;
+			}
+		}
+	}
+	
+.site-branding__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 65px;
+}
+
+.site-title {
+	margin: 0;
+	padding: 0;
+	font-size: 2.1em;
+	font-weight: 900;
+	line-height: 1em;
+	
+	a {
+		color: white;
+		text-decoration: none;
+		
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+.site-description{
+	display: none;
+}
+
+@media screen and (min-width: $query__medium){
+	.site-description {
+	display: block;
+	margin: 0;
+	font-size: .9em;
+	font-style: italic;
+	font-weight: 100;
+	}	
+}
+
+@media screen and (min-width: $query__medium) {
+	.site-header {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.site-branding {
+		width: 35%;
+		flex: 1 0 auto;
+	}
+	
+	.site-navigation {
+		width: 55%;
+	}
+}
+
+/*
+Header Menu
+*/
+@import "header-menu";
+
+
+

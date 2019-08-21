@@ -1,0 +1,83 @@
+/* so stylings do not effect logo, title, description */
+.site-title, .site-branding a{
+}
+
+a{
+	color: $color__body-link;
+	text-decoration: none;
+
+	&:visited {
+		color: $color__body-link;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+#primary-menu a{
+	&:active,
+	&:focus,
+	&:hover{
+		background-color: $color__main-menu-hover;
+	}
+}
+
+#recent-posts-2 h2, #recent-comments-2 h2{
+	font-size: 1.2em;
+/*	text-align: left; */
+	background-color: $color__text-blue;
+	color: white;
+	padding: .6em;
+}
+
+#recent-posts-2, #recent-comments-2{
+	border: black .1em solid;
+	background-color: $color__background-blockquote;
+}
+
+#recent-posts-2.widget-title{
+	/* text-align: left; */
+}
+
+.site-info a{
+	color: white;
+}
+
+.widget-title h2{ 
+	font-size: 1em;
+}
+
+#recentcomments a {
+	color: $color__body_link;
+	text-decoration: none;
+	font-size: 1em;
+	
+	&:visited{
+		color: $color__body-link;}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__text-blue;
+		padding: .5em;
+		background-color:  $color__background-blockquote;
+	}
+}
+
+.page-content,
+.entry-content,
+.entry-summary,
+.comment-content {
+	
+	a {
+		text-decoration: none;
+				
+		&:focus,
+		&:hover {
+			background-color: none;
+			color: black;
+			border-bottom: 3px solid $color__interactive;
+		}
+	}
+}

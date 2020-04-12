@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 Theme Name: jetsy
-Theme URI: http://jenjetson.com/jetsy/
+Theme URI: http://jenjetson.com/wp/
 Author: Jen Jetson
 Author URI: http://jenjetson.com/
 Description: Description
@@ -386,7 +386,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #032f82;
+	color: purple;
 	font-family: "Open Sans", "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -533,7 +533,7 @@ blockquote:before {
 	font-family: Lato, "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 	font-size: 10em;
 	line-height: 100%;
-	color: orange;
+	color: red;
 }
 
 address {
@@ -587,7 +587,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: green;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -599,7 +599,7 @@ hr {
 }
 
 ul, ol {
-	color: #032f82;
+	color: purple;
 	margin: 1.8em 0 1.8em .2em;
 	line-height: 1.5em;
 	font-family: "Open Sans", "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
@@ -652,10 +652,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: #032f82 0.03em solid;
+	border: purple 0.03em solid;
 	border-radius: .5em;
 	background: white;
-	color: #032f82;
+	color: purple;
 	font-size: 20px;
 	font-size: 1.25rem;
 	line-height: 1;
@@ -682,7 +682,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #032f82;
+	color: purple;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
@@ -721,28 +721,33 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-/* so stylings do not effect logo, title, description */
+/* so stylings does not effect logo, title, description */
 a {
-	color: #ff581a;
+	color: #0b93f6;
+	color: green;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #ff581a;
+	color: green;
 }
 
-a:hover, a:focus, a:active {
+a:hover {
+	text-decoration: none;
+}
+
+a:focus, a:active {
 	text-decoration: none;
 }
 
 #primary-menu a:active, #primary-menu a:focus, #primary-menu a:hover {
-	background-color: #ff581a;
+	background-color: green;
 }
 
 #recent-posts-2 h2, #recent-comments-2 h2 {
 	font-size: 1.2em;
 	/*	text-align: left; */
-	background-color: #032f82;
+	background-color: purple;
 	color: white;
 	padding: .6em;
 }
@@ -765,17 +770,17 @@ a:hover, a:focus, a:active {
 }
 
 #recentcomments a {
-	color: #ff581a;
+	color: green;
 	text-decoration: none;
 	font-size: 1em;
 }
 
 #recentcomments a:visited {
-	color: #ff581a;
+	color: green;
 }
 
 #recentcomments a:hover, #recentcomments a:focus, #recentcomments a:active {
-	color: #032f82;
+	color: purple;
 	padding: .5em;
 	background-color: #d9d9d9;
 }
@@ -796,7 +801,7 @@ a:hover, a:focus, a:active {
 .comment-content a:hover {
 	background-color: none;
 	color: black;
-	border-bottom: 3px solid orange;
+	border-bottom: 3px solid red;
 }
 
 /*--------------------------------------------------------------
@@ -825,8 +830,8 @@ a:hover, a:focus, a:active {
 	text-decoration: none;
 	padding: 1em;
 	margin: 0 0 0 1em;
-	border: 1px solid orange;
-	color: #032f82;
+	border: 1px solid red;
+	color: purple;
 	border-radius: 1em;
 }
 
@@ -837,9 +842,9 @@ a:hover, a:focus, a:active {
 .post-navigation a:focus,
 .paging-navigation a:hover,
 .paging-navigation a:focus {
-	border-color: orange;
-	background: orange;
-	color: #032f82;
+	border-color: red;
+	background: red;
+	color: purple;
 }
 
 .nav-links {
@@ -898,7 +903,7 @@ a:hover, a:focus, a:active {
 .post-navigation .post-title {
 	font-size: 1.2em;
 	font-weight: 700;
-	border-bottom: 3px solid orange;
+	border-bottom: 3px solid red;
 }
 
 .post-navigation a:hover .post-title,
@@ -931,12 +936,12 @@ a:hover, a:focus, a:active {
 
 .pagination a:focus, .pagination a:hover {
 	color: white;
-	background: orange;
+	background: red;
 }
 
 .pagination .current {
 	font-weight: 600;
-	color: orange;
+	color: red;
 }
 
 /*--------------------------------------------------------------
@@ -1043,7 +1048,7 @@ a:hover, a:focus, a:active {
 --------------------------------------------------------------*/
 .post {
 	margin: 0 0 1em 0;
-	border: solid 0.05em #032f82;
+	border: solid 0.05em purple;
 	background: #d9d9d9;
 }
 
@@ -1226,7 +1231,7 @@ a:hover, a:focus, a:active {
 
 .continue-reading a:focus, .continue-reading a:hover {
 	color: white;
-	background: orange;
+	background: red;
 }
 
 /*--------------------------------------------------------------
@@ -1258,7 +1263,7 @@ a:hover, a:focus, a:active {
 	padding: 0 2em;
 	font-family: "Fjalla One", sans-serif;
 	color: #fff;
-	background-color: #ff581a;
+	background-color: green;
 }
 
 @media screen and (min-width: 900px) {
@@ -1430,7 +1435,6 @@ button.dropdown-toggle {
 	right: 0;
 	border: none;
 	background: inherit;
-	color: white;
 	line-height: 1.5em;
 	padding: .4em 1em .4em .5em;
 }
@@ -1444,7 +1448,6 @@ button.dropdown-toggle {
 	padding: .6em .8em;
 	font-size: 80%;
 	text-transform: uppercase;
-	color: white;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -1553,10 +1556,6 @@ button.dropdown-toggle {
 	display: block;
 }
 
-.hentry {
-	padding: 0;
-}
-
 /* wraps around entire header */
 .entry-header {
 	padding: 1em;
@@ -1578,11 +1577,11 @@ button.dropdown-toggle {
 .cat-links a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: orange;
+	color: red;
 }
 
 .cat-links a:focus, .cat-links a:hover {
-	background-color: orange;
+	background-color: red;
 	color: white;
 }
 
@@ -1595,7 +1594,7 @@ button.dropdown-toggle {
 }
 
 .entry-title a:focus, .entry-title a:hover {
-	border-bottom: 5px solid orange;
+	border-bottom: 5px solid red;
 }
 
 @media screen and (min-width: 600px) {
@@ -1629,18 +1628,18 @@ button.dropdown-toggle {
 .entry-footer a {
 	font-weight: 500;
 	text-decoration: none;
-	color: #ff581a;
+	color: green;
 }
 
 .entry-meta a:focus, .entry-meta a:hover,
 .entry-footer a:focus,
 .entry-footer a:hover {
 	color: black;
-	border-bottom: 3px solid orange;
+	border-bottom: 3px solid red;
 }
 
 .entry-header {
-	border-bottom: #032f82 solid 0.05em;
+	border-bottom: purple solid 0.05em;
 }
 
 .byline::after {
@@ -1679,7 +1678,7 @@ button.dropdown-toggle {
 		border-bottom: 3px solid white;
 	}
 	.no-sidebar .post-content__wrap .entry-meta a:hover, .no-sidebar .post-content__wrap .entry-meta a:focus {
-		border-bottom-color: orange;
+		border-bottom-color: red;
 	}
 	.no-sidebar .post-content__wrap .byline,
 	.no-sidebar .post-content__wrap .posted-on,
@@ -1787,9 +1786,9 @@ button.dropdown-toggle {
 	width: 100%;
 	margin: 1.5em 0 0 0;
 	padding: 0 15% 0 15%;
-	background: orange;
+	background: red;
 	display: block;
-	border: solid #032f82 0.01em;
+	border: solid purple 0.01em;
 	float: center;
 }
 
@@ -1932,8 +1931,8 @@ button.dropdown-toggle {
 
 .reply a:hover, .reply a:focus {
 	color: #fff;
-	background: orange;
-	border-color: #032f82;
+	background: red;
+	border-color: purple;
 }
 
 .comment-content ol {
@@ -1946,7 +1945,7 @@ button.dropdown-toggle {
 
 .comment-author .avatar {
 	box-sizing: content-box;
-	border: 5px solid orange;
+	border: 5px solid red;
 	margin-top: -5px;
 	margin-left: -6px;
 }
@@ -2062,7 +2061,7 @@ button.dropdown-toggle {
 }
 
 .comment-metadata a {
-	color: #032f82;
+	color: purple;
 }
 
 .comment-metadata a:hover, .comment-metadata a:focus {
@@ -2091,14 +2090,14 @@ button.dropdown-toggle {
 	line-height: 1.3em;
 	text-decoration: none;
 	border: .5px solid #c3c3c3;
-	background-color: orange;
-	color: #032f82;
+	background-color: red;
+	color: purple;
 }
 
 .reply a:hover, .reply a:focus {
 	color: white;
-	background: #032f82;
-	border-color: orange;
+	background: purple;
+	border-color: red;
 }
 
 .comment-content ol {
@@ -2111,7 +2110,7 @@ button.dropdown-toggle {
 
 .bypostauthor .avatar {
 	box-sizing: content-box;
-	border: 5px solid orange;
+	border: 5px solid red;
 	margin-top: -5px;
 	margin-left: -5px;
 }
@@ -2165,7 +2164,7 @@ button.dropdown-toggle {
 	padding: 1em;
 	font-family: Lato, "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 	color: #fff;
-	background-color: #ff581a;
+	background-color: green;
 	text-align: center;
 }
 
@@ -2294,7 +2293,7 @@ button.dropdown-toggle {
 }
 
 .widget a:hover, .widget a:focus {
-	border-bottom: 3px solid orange;
+	border-bottom: 3px solid red;
 }
 
 .widget select {
@@ -2358,14 +2357,14 @@ button.dropdown-toggle {
 }
 
 .widget_recent_entries li {
-	border: 0.05em solid #032f82;
+	border: 0.05em solid purple;
 }
 
 /* comments */
 .widget_recent_comments li {
 	line-height: 1.3em;
 	padding: .5em;
-	border: 0.05em solid #032f82;
+	border: 0.05em solid purple;
 }
 
 .widget_recent_comments a:hover,
@@ -2376,7 +2375,7 @@ button.dropdown-toggle {
 /* RSS widget */
 .widget_rss li {
 	margin-bottom: 1em;
-	border: #032f82 0.05em solid;
+	border: purple 0.05em solid;
 }
 
 .widget li a.rsswidget {
@@ -2410,7 +2409,7 @@ button.dropdown-toggle {
 /* Calendar widget */
 .widget_calendar {
 	font-weight: 400;
-	border: #032f82 0.05em solid;
+	border: purple 0.05em solid;
 	font-family: Lato, "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 }
 
@@ -2527,7 +2526,7 @@ button.dropdown-toggle {
 .tagcloud {
 	background: white;
 	padding: 1em;
-	border: 0.1em solid #032f82;
+	border: 0.1em solid purple;
 }
 
 /*--------------------------------------------------------------
@@ -2694,7 +2693,7 @@ SVG Fallbacks
 }
 
 .gallery-item a:hover img, .gallery-item a:focus img {
-	border-color: orange;
+	border-color: red;
 }
 
 .gallery-item a img {

@@ -19,50 +19,50 @@ function jetsy_customize_register( $wp_customize ) {
 	 * Custom Customizer Customizations
 	 */
 	
-	// Setting for header and footer background color
-	$wp_customize->add_setting( 'theme_bg_color', array(
-		'default'			=> 'ff581a',
-		'transport'			=> 'postMessage',
-		'type'				=> 'theme_mod',
-		'sanitize_callback' => 'sanitize_hex_color',
-	));
+
+	//This is to control the header and footer background color.  I don't want for this right now.
+//	$wp_customize->add_setting( 'theme_bg_color', array(
+//		'default'			=> '#ff4500',
+//		'transport'			=> 'postMessage',
+//		'type'				=> 'theme_mod',
+//		'sanitize_callback' => 'sanitize_hex_color',
+//	));
+//
+//	// Control for header and footer background color.
+//	$wp_customize->add_control(
+//		new WP_Customize_Color_Control(
+//			$wp_customize,
+//			'theme_bg_color',
+//				array(
+//					'label'		=> __( 'Header and footer background color', 'jetsy'),
+//					'section'	=> 'colors',
+//					'settings'	=> 'theme_bg_color'
+//				)
+//		)
+//	);
 	
-	// Control for header and footer background color.
-	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
-			$wp_customize,
-			'theme_bg_color', 
-				array(
-					'label'		=> __( 'Header and footer background color', 'jetsy'),
-					'section'	=> 'colors',
-					'settings'	=> 'theme_bg_color'
-				)
-		)
-	);
+//	// Create interactive color setting
+//	$wp_customize->add_setting( 'interactive_color' ,
+//		array(
+//			'default'			=> 'ffa500',
+//			'transport'			=> 'postMessage',
+//			'type'				=> 'theme_mod',
+//			'sanitize_callback'	=> 'sanitize_hex_color',
+//			'transport'			=> 'postMessage',
+//		)
+//	);
 	
-	// Create interactive color setting
-	$wp_customize->add_setting( 'interactive_color' , 
-		array(
-			'default'			=> 'ffa500',
-			'transport'			=> 'postMessage',
-			'type'				=> 'theme_mod',
-			'sanitize_callback'	=> 'sanitize_hex_color',
-			'transport'			=> 'postMessage',
-		)
-	);
-	
-	// Interactive color controls
-	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
-			$wp_customize,
-			'interactive_color', array(
-				'label'		=> __( 'Interactive color (links etc)', 'jetsy' ),
-				'section'	=> 'colors',
-				'settings'	=> 'interactive_color'
-			)
-		)
-	);
-	
+//	// Add the controls
+//	$wp_customize->add_control(
+//		new WP_Customize_Color_Control(
+//			$wp_customize,
+//			'interactive_color', array(
+//				'label'		=> __( 'Interactive color (links etc)', 'jetsy' ),
+//				'section'	=> 'colors',
+//				'settings'	=> 'interactive_color'
+//			)
+//		)
+//	);
 	
 	// Add option to select index content
 	$wp_customize->add_section( 'theme_options', 
@@ -79,7 +79,7 @@ function jetsy_customize_register( $wp_customize ) {
 		array(
 			'default'			=> 'excerpt',
 			'type'				=> 'theme_mod',
-			'sanitize_callback' => 'jetsy_sanitize_length', 
+			'sanitize_callback' => 'jetsy_sanitize_length', // Sanitization function appears further down
 			'transport'			=> 'postMessage'
 		)
 	);
@@ -94,7 +94,7 @@ function jetsy_customize_register( $wp_customize ) {
 				'excerpt'		=> __( 'Excerpt (default)', 'jetsy' ),
 				'full-content'	=> __( 'Full content', 'jetsy' )
 			),
-			'settings'	=> 'length_setting' 
+			'settings'	=> 'length_setting' // Matches setting ID from above
 		)
 	);
 	
@@ -132,7 +132,8 @@ if ( ! function_exists( 'jetsy_header_style' ) ) :
  */
 function jetsy_header_style() {
 	$header_text_color = get_header_textcolor();
-	$header_bg_color = get_theme_mod( 'theme_bg_color' );
+	//disabled control of background color.
+	//$header_bg_color = get_theme_mod( 'theme_bg_color' );
 	$interactive_color = get_theme_mod('interactive_color');
 
 	/*
@@ -177,8 +178,8 @@ function jetsy_header_style() {
 
 			button.menu-toggle:hover,
 			button.menu-toggle:focus {
-				color: <?php echo esc_attr( $header_bg_color ); ?>;
-				background-color: #<?php echo esc_attr( $header_text_color ); ?>;
+				/*color: */<?php //echo esc_attr( $header_bg_color ); ?>/*;*/
+				/*background-color: #*/<?php //echo esc_attr( $header_text_color ); ?>/*;*/
 			}
 		</style>
 		<?php
@@ -187,7 +188,7 @@ function jetsy_header_style() {
 	/*
 	 * Do we have a custom header background color?
 	 */
-	if ( 'ff7d4d' != $header_bg_color ) { ?>
+	if ( '#FF4500' != $header_bg_color ) { ?>
 		<style type="text/css">
 			.site-header,
 			.site-footer {
@@ -200,10 +201,10 @@ function jetsy_header_style() {
 	/*
 	 * Do we have a custom interactive color?
 	 */
-	if ( 'ffa500' != $interactive_color ) { ?>
+	if ( '#FFA500' != $interactive_color ) { ?>
 		<style type="text/css">
-			/*a:hover,
-			a:focus,*/ 
+			a:hover,
+			a:focus, 
 			a:active,
 			.page-content a:focus, .page-content a:hover,
 			.entry-content a:focus,
@@ -238,8 +239,9 @@ function jetsy_header_style() {
 			.reply a:hover, 
 			.reply a:focus,
 			.comment-form .form-submit input:hover, 
-			.comment-form .form-submit input:focus
-			{
+			.comment-form .form-submit input:focus,
+			.widget a:hover, 
+			.widget a:focus {
 				border-color: <?php echo esc_attr( $interactive_color ); ?>;
 			}
 			

@@ -1,15 +1,16 @@
-/* so stylings do not effect logo, title, description */
+/* so stylings does not effect logo, title, description */
 .site-title, .site-branding a{
 }
 
 a{
+	color: #0b93f6;
 	color: $color__body-link;
 	text-decoration: none;
 
 	&:visited {
 		color: $color__body-link;
 	}
-	&:hover,
+	&:hover, {text-decoration: none;}
 	&:focus,
 	&:active {
 		text-decoration: none;

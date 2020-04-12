@@ -1,10 +1,18 @@
 $color__featured-image-bg:  #blue;
-$color__skin: #ff581a;
-$color__text-blue: #032f82;
-$color__text-main: #404040;
-$color__interactive: orange;
+//$color__skin: #ff581a;
+$color__skin: green;
+
+$color__text-blue: purple;
+//$color__text-blue: #032f82;
+//$color__text-main: #404040;
+$color__text-main: green;
+$color__interactive: red;
+$color__entry-title: pink;
+
+
 $color__interactive-light: #ffffe6;
-$color__footer-background: $color__skin;
+$color__footer-background: #ffffff;
+//$color__footer-background: $color__skin;
 $color__footer-accents: $color__interactive;
 $color__cat-links: $color__interactive;
 $color__cat-link-hover:  $color__interactive;
@@ -13,18 +21,23 @@ $color__background-blockquote: #d9d9d9;
 $color__blockquote-decoration: $color__interactive;
 $color__list-text-filler: $color__text-blue;
 $color__menu-toggle: white;
-$color__footer-text: white;
+$color__footer-text: green;
+//$color__footer-text: white;
 $color__main-menu-text: white;
-$color__main-menu-hover: $color__skin;
-$color__text-interactive: white;
-$color__background-body: #fff;
+//$color__main-menu-hover: $color__skin;
+$color__main-menu-hover: green;
+//$color__text-interactive: white;
+$color__text-interactive: green;
+//$color__background-body: #fff;
+$color__background-body: green;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-button: #b3b3b3;
 $color__background-pre: #eef0f3;
 $color__background-ins: #fff9c0;
 
-$color__text-footer: #454545;
+$color__text-footer: purple;
+//$color__text-footer: #454545;
 $color__text-screen: #21759b;
 $color__text-input: $color__text-blue;    
 $color__text-input-focus: #111;

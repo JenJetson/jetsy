@@ -1,9 +1,14 @@
-.main-navigation {
+
+.front-page-navigation {
 	clear: left;
-	display: block;
+	display: inline;
 	font-family: $font__main-menu;
 	font-weight: 400;
 	width: 100%;
+	height:auto;
+    margin: -100px 0 0 0;
+    font-size: 3em;
+
 
 	ul {
 		display: none;
@@ -37,10 +42,7 @@
 
 		li:hover > ul,
 		li.focus > ul {
-			left: auto;
-			-moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-			-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-			box-shadow: 0 0 5px rgba(0,0,0,1);
+		    left: auto;
 
 		}
 	}
@@ -66,7 +68,7 @@
 
 	/*.current_page_item > a,
 	.current-menu-item > a,
-	
+
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}*/
@@ -113,7 +115,7 @@ button.dropdown-toggle {
 		display: none;
 	}
 
-	.main-navigation {
+	.front-page-navigation {
 
 		.menu-item-has-children > a,
 		.page_item_has_children > a {
@@ -154,14 +156,14 @@ button.dropdown-toggle {
 }
 
 @media screen and (min-width: $query__medium) {
-	.main-navigation {
+	.front-page-navigation {
 
 		ul {
 			justify-content: flex-end;
 			padding-top: 0;
-			
-			/* If you want dropdowns to open on hover, uncomment this: 
-		
+
+			/* If you want dropdowns to open on hover, uncomment this:
+
 				li:hover > ul,
 				li:focus > ul {
 				display: block;

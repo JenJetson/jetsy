@@ -1,14 +1,15 @@
 #masthead {
 	width: 100%;
-	
+
  	@media screen and (min-width: $query__large) {
 		padding: 1em;
 		}
 }
 
 .header-image {
-	max-height: 60vh; 
+	max-height: 100vh;
 	overflow: hidden;
+	opacity: .3;
 	
 	img {
 		display: block;
@@ -33,7 +34,7 @@
 }
 
 .custom-logo-link img{
-	display: none;
+	//display: none; s remove to show logo
 }
 	
 	@media screen and (min-width: 500px){
@@ -103,11 +104,11 @@
 		width: 55%;
 	}
 }
-
-/*
-Header Menu
-*/
-@import "header-menu";
+//
+///*
+//Header Menu
+//*/
+//@import "header-menu";
 
 
 

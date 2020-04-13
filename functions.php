@@ -361,4 +361,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Load SVG icon functions.
  */
  require get_template_directory() . '/inc/icon-functions.php';
- 
+
+
+ /**
+  * Add Jen Jetson icon to the end of content
+  */
+
+ function add_logo_to_content ($content){
+     if ( is_front_page() || is_page('contact') ){
+         $content .= '<img src="/wp/wp-content/uploads/2020/04/logo.png" alt="logo" width="100px" >';
+     }
+     return $content;
+ }
+
+ //added logo to the end of content on front page and pages.
+add_filter( 'the_content', 'filter_the_content_in_the_main_loop' );
+function filter_the_content_in_the_main_loop( $content ) {
+    if ( is_front_page() || ( is_page()) ) {
+        return $content .= '<img src="/wp/wp-content/uploads/2020/04/logo.png" alt="logo" width="50px" align="right" >';
+    }
+    return $content;
+}

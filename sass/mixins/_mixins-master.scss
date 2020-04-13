@@ -1,8 +1,8 @@
 // Rem output with px fallback
 // change the master font size here
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 20) * 1px; 
-	font-size: $sizeValue * 1.25rem;
+	font-size: ($sizeValue * 20) * 1px;
+	font-size: $sizeValue * 1.1rem;
 }
 
 // Center block

@@ -12,7 +12,8 @@
  * @package jetsy
  */
 
-get_header();
+include ('front-page-header.php');
+
 ?>
 
 	<div id="primary" class="content-area">

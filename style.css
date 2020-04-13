@@ -386,10 +386,10 @@ input,
 select,
 optgroup,
 textarea {
-	color: purple;
+	color: #032f82;
 	font-family: "Open Sans", "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 	font-size: 18px;
-	font-size: 1.125rem;
+	font-size: 0.99rem;
 	line-height: 1.5;
 }
 
@@ -401,7 +401,7 @@ textarea {
 	optgroup,
 	textarea {
 		font-size: 20px;
-		font-size: 1.25rem;
+		font-size: 1.1rem;
 	}
 }
 
@@ -417,95 +417,101 @@ h1 {
 	font-size: 2em;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
 	h1 {
-		font-size: 2.2em;
-	}
-}
-
-@media screen and (min-width: 600px) {
-	h1 {
-		font-size: 2.6em;
-	}
-}
-
-h2 {
-	font-size: 1.625em;
-}
-
-@media screen and (min-width: 900px) {
-	h2 {
 		font-size: 2em;
 	}
 }
 
-@media screen and (min-width: 600px) {
-	h2 {
-		font-size: 2.25em;
-	}
-}
-
-h3 {
-	font-size: 1.375em;
-}
-
 @media screen and (min-width: 900px) {
-	h3 {
-		font-size: 1.5em;
+	h1 {
+		font-size: 1.8em;
 	}
 }
 
 @media screen and (min-width: 600px) {
-	h3 {
-		font-size: 1.75em;
-	}
-}
-
-h4 {
-	font-size: 1.15em;
-}
-
-@media screen and (min-width: 900px) {
-	h4 {
+	h1 {
 		font-size: 1.3em;
 	}
 }
 
-@media screen and (min-width: 600px) {
-	h4 {
-		font-size: 1.5em;
-	}
-}
-
-h5 {
-	font-size: 1.05em;
+h2 {
+	font-size: 1.5em;
 }
 
 @media screen and (min-width: 900px) {
-	h5 {
+	h2 {
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	h2 {
 		font-size: 1.2em;
 	}
 }
 
-@media screen and (min-width: 600px) {
-	h5 {
-		font-size: 1.4em;
+h3 {
+	font-size: 1.17em;
+}
+
+@media screen and (min-width: 900px) {
+	h3 {
+		font-size: 1em;
 	}
 }
 
-h6 {
+@media screen and (min-width: 600px) {
+	h3 {
+		font-size: .83em;
+	}
+}
+
+h4 {
 	font-size: 1em;
 }
 
 @media screen and (min-width: 900px) {
+	h4 {
+		font-size: .83em;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	h4 {
+		font-size: .67em;
+	}
+}
+
+h5 {
+	font-size: .83em;
+}
+
+@media screen and (min-width: 900px) {
+	h5 {
+		font-size: .67em;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	h5 {
+		font-size: .55em;
+	}
+}
+
+h6 {
+	font-size: .67em;
+}
+
+@media screen and (min-width: 900px) {
 	h6 {
-		font-size: 1.3em;
+		font-size: .6em;
 	}
 }
 
 @media screen and (min-width: 600px) {
 	h6 {
-		font-size: 1.4em;
+		font-size: .55em;
 	}
 }
 
@@ -533,7 +539,7 @@ blockquote:before {
 	font-family: Lato, "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 	font-size: 10em;
 	line-height: 100%;
-	color: red;
+	color: darkorange;
 }
 
 address {
@@ -544,7 +550,7 @@ pre {
 	background: #eef0f3;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 18.75px;
-	font-size: 1.17188rem;
+	font-size: 1.03125rem;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -555,7 +561,7 @@ pre {
 code, kbd, tt, var {
 	font-family: Monaco, Consolas, "Andasle Mono", "DejaVu Sans Mono", monospace;
 	font-size: 18.75px;
-	font-size: 1.17188rem;
+	font-size: 1.03125rem;
 }
 
 abbr, acronym {
@@ -587,7 +593,7 @@ html {
 }
 
 body {
-	background: green;
+	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -599,7 +605,7 @@ hr {
 }
 
 ul, ol {
-	color: purple;
+	color: #032f82;
 	margin: 1.8em 0 1.8em .2em;
 	line-height: 1.5em;
 	font-family: "Open Sans", "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
@@ -652,12 +658,12 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: purple 0.03em solid;
+	border: #032f82 0.03em solid;
 	border-radius: .5em;
 	background: white;
-	color: purple;
+	color: #032f82;
 	font-size: 20px;
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	line-height: 1;
 	padding: .5em 1em;
 }
@@ -682,7 +688,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: purple;
+	color: #032f82;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 3px;
@@ -723,13 +729,12 @@ textarea {
 --------------------------------------------------------------*/
 /* so stylings does not effect logo, title, description */
 a {
-	color: #0b93f6;
-	color: green;
+	color: #ff581a;
 	text-decoration: none;
 }
 
 a:visited {
-	color: green;
+	color: #ff581a;
 }
 
 a:hover {
@@ -741,13 +746,23 @@ a:focus, a:active {
 }
 
 #primary-menu a:active, #primary-menu a:focus, #primary-menu a:hover {
-	background-color: green;
+	background-color: #ff581a;
+	text-decoration: none;
+	font-size: 1.02em;
+}
+
+#front-page-navigation a:active, #front-page-navigation a:focus, #front-page-navigation a:hover {
+	box-shadow: 0 0 5px black;
+	background-color: rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+	color: #ff581a;
+	font-size: 1.05em;
 }
 
 #recent-posts-2 h2, #recent-comments-2 h2 {
 	font-size: 1.2em;
 	/*	text-align: left; */
-	background-color: purple;
+	background-color: #032f82;
 	color: white;
 	padding: .6em;
 }
@@ -770,17 +785,17 @@ a:focus, a:active {
 }
 
 #recentcomments a {
-	color: green;
+	color: #ff581a;
 	text-decoration: none;
 	font-size: 1em;
 }
 
 #recentcomments a:visited {
-	color: green;
+	color: #ff581a;
 }
 
 #recentcomments a:hover, #recentcomments a:focus, #recentcomments a:active {
-	color: purple;
+	color: #032f82;
 	padding: .5em;
 	background-color: #d9d9d9;
 }
@@ -801,7 +816,7 @@ a:focus, a:active {
 .comment-content a:hover {
 	background-color: none;
 	color: black;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid darkorange;
 }
 
 /*--------------------------------------------------------------
@@ -830,8 +845,8 @@ a:focus, a:active {
 	text-decoration: none;
 	padding: 1em;
 	margin: 0 0 0 1em;
-	border: 1px solid red;
-	color: purple;
+	border: 1px solid darkorange;
+	color: #032f82;
 	border-radius: 1em;
 }
 
@@ -842,9 +857,9 @@ a:focus, a:active {
 .post-navigation a:focus,
 .paging-navigation a:hover,
 .paging-navigation a:focus {
-	border-color: red;
-	background: red;
-	color: purple;
+	border-color: darkorange;
+	background: darkorange;
+	color: #032f82;
 }
 
 .nav-links {
@@ -903,7 +918,7 @@ a:focus, a:active {
 .post-navigation .post-title {
 	font-size: 1.2em;
 	font-weight: 700;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid darkorange;
 }
 
 .post-navigation a:hover .post-title,
@@ -936,12 +951,12 @@ a:focus, a:active {
 
 .pagination a:focus, .pagination a:hover {
 	color: white;
-	background: red;
+	background: darkorange;
 }
 
 .pagination .current {
 	font-weight: 600;
-	color: red;
+	color: darkorange;
 }
 
 /*--------------------------------------------------------------
@@ -973,7 +988,7 @@ a:focus, a:active {
 	color: #21759b;
 	display: block;
 	font-size: 17.5px;
-	font-size: 1.09375rem;
+	font-size: 0.9625rem;
 	font-weight: bold;
 	height: auto;
 	left: 5px;
@@ -1048,7 +1063,7 @@ a:focus, a:active {
 --------------------------------------------------------------*/
 .post {
 	margin: 0 0 1em 0;
-	border: solid 0.05em purple;
+	border: solid 0.05em #032f82;
 	background: #d9d9d9;
 }
 
@@ -1231,7 +1246,7 @@ a:focus, a:active {
 
 .continue-reading a:focus, .continue-reading a:hover {
 	color: white;
-	background: red;
+	background: darkorange;
 }
 
 /*--------------------------------------------------------------
@@ -1248,8 +1263,9 @@ a:focus, a:active {
 }
 
 .header-image {
-	max-height: 60vh;
+	max-height: 100vh;
 	overflow: hidden;
+	opacity: .3;
 }
 
 .header-image img {
@@ -1263,7 +1279,7 @@ a:focus, a:active {
 	padding: 0 2em;
 	font-family: "Fjalla One", sans-serif;
 	color: #fff;
-	background-color: green;
+	background-color: #ff581a;
 }
 
 @media screen and (min-width: 900px) {
@@ -1276,10 +1292,6 @@ a:focus, a:active {
 	min-height: 65px;
 	display: -ms-flexbox;
 	display: flex;
-}
-
-.custom-logo-link img {
-	display: none;
 }
 
 @media screen and (min-width: 500px) {
@@ -1351,14 +1363,15 @@ a:focus, a:active {
 	}
 }
 
-/*
-Header Menu
-*/
+/*--------------------------------------------------------------
+## Header Menu
+--------------------------------------------------------------*/
 .main-navigation {
 	clear: left;
 	display: block;
 	font-family: lato, "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 	font-weight: 400;
+	width: 100%;
 	/*.current_page_item > a,
 	.current-menu-item > a,
 	
@@ -1401,6 +1414,7 @@ Header Menu
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
+	box-shadow: 0 0 5px black;
 }
 
 .main-navigation li {
@@ -1507,6 +1521,165 @@ button.dropdown-toggle {
 }
 
 /*--------------------------------------------------------------
+## Header Menu Front Page
+--------------------------------------------------------------*/
+.front-page-navigation {
+	clear: left;
+	display: inline;
+	font-family: lato, "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
+	font-weight: 400;
+	width: 100%;
+	height: auto;
+	margin: -100px 0 0 0;
+	font-size: 3em;
+	/*.current_page_item > a,
+	.current-menu-item > a,
+
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}*/
+}
+
+.front-page-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-top: 1em;
+	padding-left: 0;
+}
+
+.front-page-navigation ul ul {
+	display: none;
+	top: 1.5em;
+	z-index: 99999;
+}
+
+.front-page-navigation ul ul ul {
+	top: 0;
+}
+
+.front-page-navigation ul ul li {
+	padding-left: 1em;
+}
+
+.front-page-navigation ul ul li:hover > ul,
+.front-page-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.front-page-navigation ul ul a {
+	width: 200px;
+}
+
+.front-page-navigation ul li:hover > ul,
+.front-page-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.front-page-navigation li {
+	position: relative;
+}
+
+.front-page-navigation a {
+	display: inline-block;
+	width: 100%;
+	padding: .5em 1em .5em 0;
+	text-decoration: none;
+	color: white;
+}
+
+.front-page-navigation a:hover,
+.front-page-navigation a:focus {
+	text-decoration: underline;
+}
+
+.front-page-navigation .menu-item-has-children,
+.front-page-navigation .page_item_has_children {
+	min-width: 218px;
+}
+
+.front-page-navigation .menu-item-has-children > a,
+.front-page-navigation .page_item_has_children > a {
+	padding-right: 2em;
+}
+
+button.dropdown-toggle {
+	position: absolute;
+	right: 0;
+	border: none;
+	background: inherit;
+	line-height: 1.5em;
+	padding: .4em 1em .4em .5em;
+}
+
+.menu-toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	margin: 1.2em 1.2em 0 0;
+	padding: .6em .8em;
+	font-size: 80%;
+	text-transform: uppercase;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Toggle small menu and children on */
+.toggled-on ul,
+.sub-menu.toggled-on {
+	display: block;
+}
+
+@media screen and (min-width: 600px) {
+	.menu-toggle {
+		display: none;
+	}
+	.front-page-navigation .menu-item-has-children > a,
+	.front-page-navigation .page_item_has_children > a {
+		padding-right: 2em;
+		background: rgba(255, 255, 255, 0.1);
+	}
+	.front-page-navigation ul {
+		display: block;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+	.front-page-navigation ul ul {
+		-ms-flex-direction: column;
+		    flex-direction: column;
+		background: rgba(255, 255, 255, 0.1);
+		margin-left: 0;
+	}
+	.front-page-navigation ul ul li {
+		padding-left: 0;
+	}
+	.front-page-navigation ul ul li a {
+		width: 218px;
+		background: none;
+	}
+	.front-page-navigation ul li a {
+		padding: .4em 1em;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.front-page-navigation ul {
+		-ms-flex-pack: end;
+		    justify-content: flex-end;
+		padding-top: 0;
+		/* If you want dropdowns to open on hover, uncomment this:
+
+				li:hover > ul,
+				li:focus > ul {
+				display: block;
+			}
+		*/
+	}
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 /* to put a hover text over image */
@@ -1577,11 +1750,11 @@ button.dropdown-toggle {
 .cat-links a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: red;
+	color: darkorange;
 }
 
 .cat-links a:focus, .cat-links a:hover {
-	background-color: red;
+	background-color: darkorange;
 	color: white;
 }
 
@@ -1594,25 +1767,25 @@ button.dropdown-toggle {
 }
 
 .entry-title a:focus, .entry-title a:hover {
-	border-bottom: 5px solid red;
+	border-bottom: 5px solid darkorange;
 }
 
 @media screen and (min-width: 600px) {
 	.entry-title {
-		font-size: 2.3em;
+		font-size: 1.6em;
 	}
 }
 
 @media screen and (min-width: 900px) {
 	.entry-title {
-		font-size: 2.5em;
+		font-size: 1.8em;
 		margin: .5em;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.entry-title {
-		font-size: 2.9em;
+		font-size: 2em;
 		margin: .2em 0 0 0;
 	}
 }
@@ -1628,18 +1801,18 @@ button.dropdown-toggle {
 .entry-footer a {
 	font-weight: 500;
 	text-decoration: none;
-	color: green;
+	color: #ff581a;
 }
 
 .entry-meta a:focus, .entry-meta a:hover,
 .entry-footer a:focus,
 .entry-footer a:hover {
 	color: black;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid darkorange;
 }
 
 .entry-header {
-	border-bottom: purple solid 0.05em;
+	border-bottom: #032f82 solid 0.05em;
 }
 
 .byline::after {
@@ -1678,7 +1851,7 @@ button.dropdown-toggle {
 		border-bottom: 3px solid white;
 	}
 	.no-sidebar .post-content__wrap .entry-meta a:hover, .no-sidebar .post-content__wrap .entry-meta a:focus {
-		border-bottom-color: red;
+		border-bottom-color: darkorange;
 	}
 	.no-sidebar .post-content__wrap .byline,
 	.no-sidebar .post-content__wrap .posted-on,
@@ -1723,8 +1896,8 @@ button.dropdown-toggle {
 	}
 	
 	@media screen and (min-width: $size__max-width) {
-		margin-right: calc( ((-100vw + 1080px)/2) - 2em );
-		margin-left: calc( ((-100vw + 1080px)/2) - 2em );
+		margin-right: calc( ((-100vw + 1680px)/2) - 2em );
+		margin-left: calc( ((-100vw + 1680px)/2) - 2em );
 	}
 	img {
 		display: block;
@@ -1786,9 +1959,9 @@ button.dropdown-toggle {
 	width: 100%;
 	margin: 1.5em 0 0 0;
 	padding: 0 15% 0 15%;
-	background: red;
+	background: darkorange;
 	display: block;
-	border: solid purple 0.01em;
+	border: solid #032f82 0.01em;
 	float: center;
 }
 
@@ -1871,7 +2044,7 @@ button.dropdown-toggle {
 	}
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1680px) {
 	.no-sidebar .children {
 		margin-left: 3em;
 	}
@@ -1931,8 +2104,8 @@ button.dropdown-toggle {
 
 .reply a:hover, .reply a:focus {
 	color: #fff;
-	background: red;
-	border-color: purple;
+	background: darkorange;
+	border-color: #032f82;
 }
 
 .comment-content ol {
@@ -1945,7 +2118,7 @@ button.dropdown-toggle {
 
 .comment-author .avatar {
 	box-sizing: content-box;
-	border: 5px solid red;
+	border: 5px solid darkorange;
 	margin-top: -5px;
 	margin-left: -6px;
 }
@@ -2035,7 +2208,7 @@ button.dropdown-toggle {
 	}
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1680px) {
 	.no-sidebar .children {
 		margin-left: 3em;
 	}
@@ -2061,7 +2234,7 @@ button.dropdown-toggle {
 }
 
 .comment-metadata a {
-	color: purple;
+	color: #032f82;
 }
 
 .comment-metadata a:hover, .comment-metadata a:focus {
@@ -2090,14 +2263,14 @@ button.dropdown-toggle {
 	line-height: 1.3em;
 	text-decoration: none;
 	border: .5px solid #c3c3c3;
-	background-color: red;
-	color: purple;
+	background-color: darkorange;
+	color: #032f82;
 }
 
 .reply a:hover, .reply a:focus {
 	color: white;
-	background: purple;
-	border-color: red;
+	background: #032f82;
+	border-color: darkorange;
 }
 
 .comment-content ol {
@@ -2110,7 +2283,7 @@ button.dropdown-toggle {
 
 .bypostauthor .avatar {
 	box-sizing: content-box;
-	border: 5px solid red;
+	border: 5px solid darkorange;
 	margin-top: -5px;
 	margin-left: -5px;
 }
@@ -2164,7 +2337,7 @@ button.dropdown-toggle {
 	padding: 1em;
 	font-family: Lato, "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 	color: #fff;
-	background-color: green;
+	background-color: #ff581a;
 	text-align: center;
 }
 
@@ -2182,7 +2355,7 @@ button.dropdown-toggle {
 }
 
 .site-footer__wrap {
-	max-width: 1080px;
+	max-width: 1680px;
 	margin: 0 auto;
 }
 
@@ -2293,7 +2466,7 @@ button.dropdown-toggle {
 }
 
 .widget a:hover, .widget a:focus {
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid darkorange;
 }
 
 .widget select {
@@ -2357,14 +2530,14 @@ button.dropdown-toggle {
 }
 
 .widget_recent_entries li {
-	border: 0.05em solid purple;
+	border: 0.05em solid #032f82;
 }
 
 /* comments */
 .widget_recent_comments li {
 	line-height: 1.3em;
 	padding: .5em;
-	border: 0.05em solid purple;
+	border: 0.05em solid #032f82;
 }
 
 .widget_recent_comments a:hover,
@@ -2375,7 +2548,7 @@ button.dropdown-toggle {
 /* RSS widget */
 .widget_rss li {
 	margin-bottom: 1em;
-	border: purple 0.05em solid;
+	border: #032f82 0.05em solid;
 }
 
 .widget li a.rsswidget {
@@ -2409,7 +2582,7 @@ button.dropdown-toggle {
 /* Calendar widget */
 .widget_calendar {
 	font-weight: 400;
-	border: purple 0.05em solid;
+	border: #032f82 0.05em solid;
 	font-family: Lato, "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 }
 
@@ -2526,7 +2699,7 @@ button.dropdown-toggle {
 .tagcloud {
 	background: white;
 	padding: 1em;
-	border: 0.1em solid purple;
+	border: 0.1em solid #032f82;
 }
 
 /*--------------------------------------------------------------
@@ -2693,7 +2866,7 @@ SVG Fallbacks
 }
 
 .gallery-item a:hover img, .gallery-item a:focus img {
-	border-color: red;
+	border-color: darkorange;
 }
 
 .gallery-item a img {

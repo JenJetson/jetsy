@@ -3,7 +3,6 @@
 }
 
 a{
-	color: #0b93f6;
 	color: $color__body-link;
 	text-decoration: none;
 
@@ -22,8 +21,26 @@ a{
 	&:focus,
 	&:hover{
 		background-color: $color__main-menu-hover;
+		text-decoration: none;
+		//color: $color__body-link;
+		font-size: 1.02em;
 	}
 }
+
+#front-page-navigation a{
+	&:active,
+	&:focus,
+	&:hover{
+		-moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		box-shadow: 0 0 5px rgba(0,0,0,1);
+		background-color: rgba(0,0,0,.1);
+		text-decoration: none;
+		color: $color__body-link;
+		font-size: 1.05em;
+	}
+}
+
 
 #recent-posts-2 h2, #recent-comments-2 h2{
 	font-size: 1.2em;

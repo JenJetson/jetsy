@@ -1,23 +1,13 @@
-<?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package jetsy
- */
+
+<!--call custom header.  for this to work, only use the part of the name that is not php and not header-->
+<?php get_header('alt'); ?>
+
+            <div class="alt-page">
+                <?php include ('alt-front.php');?>
 
 
-?>
+            </div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-            <?php include ('alt-front.php');?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->s
+<!--doesn't show on front-page but need for hidden WP things EX: admin header menu (when logged in)-->
+<?php wp_footer(); ?>
+</html>

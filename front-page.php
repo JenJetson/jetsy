@@ -1,13 +1,10 @@
-
-<!--call custom header.  for this to work, only use the part of the name that is not php and not header-->
+<!--call custom header named header-alt.php -->
 <?php get_header('alt'); ?>
 
-            <div class="alt-page">
-                <?php include ('alt-front.php');?>
+<div class="alt-page">
+    <?php include('alt-front.php'); ?>
+</div>
 
-
-            </div>
-
-<!--doesn't show on front-page but need for hidden WP things EX: admin header menu (when logged in)-->
+<!--doesn't show on front-page but need for WP things EX: admin header menu (when logged in)-->
 <?php wp_footer(); ?>
 </html>

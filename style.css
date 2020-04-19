@@ -746,16 +746,14 @@ a:focus, a:active {
 }
 
 #primary-menu a:active, #primary-menu a:focus, #primary-menu a:hover {
-	background-color: #ff581a;
 	text-decoration: none;
-	font-size: 1.02em;
+	font-size: 1.01em;
 }
 
 #front-page-navigation a:active, #front-page-navigation a:focus, #front-page-navigation a:hover {
 	box-shadow: 0 0 5px black;
 	background-color: rgba(0, 0, 0, 0.1);
 	text-decoration: none;
-	color: #ff581a;
 	font-size: 1.05em;
 }
 
@@ -1280,11 +1278,13 @@ a:focus, a:active {
 --------------------------------------------------------------*/
 #masthead {
 	width: 100%;
+	padding: .8em 1em .1em 1em;
 }
 
 @media screen and (min-width: 1200px) {
-	#masthead {
-		padding: 1em;
+	#masthead .custom-logo {
+		width: 90px;
+		height: auto;
 	}
 }
 
@@ -1358,6 +1358,11 @@ a:focus, a:active {
 	text-decoration: underline;
 }
 
+.custom-logo {
+	width: 60px;
+	height: auto;
+}
+
 .site-description {
 	display: none;
 }
@@ -1369,6 +1374,10 @@ a:focus, a:active {
 		font-size: .9em;
 		font-style: italic;
 		font-weight: 100;
+	}
+	.custom-logo {
+		width: 80px;
+		height: auto;
 	}
 }
 

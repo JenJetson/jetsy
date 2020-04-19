@@ -51,6 +51,7 @@ if (!function_exists('jetsy_setup')) :
         register_nav_menus(array(
             'primary' => esc_html__('Header', 'jetsy'),
             'social' => esc_html__('Social Media Menu', 'jetsy'),
+            'side' => esc_html__('Side Menu', 'jetsy')
         ));
 
         /*
@@ -310,8 +311,12 @@ add_action('widgets_init', 'jetsy_widgets_init');
  */
 function jetsy_scripts()
 {
-
+//  load  google api font files from below
     wp_enqueue_style('jetsy-fonts', jetsy_fonts_url());
+
+//    add my font-awesome basic kit
+    wp_enqueue_script('prefix-font-awesome', 'https://kit.fontawesome.com/17d1f167a2.js');
+
 
     //main stylesheet for site.  all compiled by sass
     if (!is_page('home')) {

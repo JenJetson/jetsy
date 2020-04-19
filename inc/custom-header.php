@@ -21,7 +21,7 @@ function jetsy_custom_header_setup() {
 		'default-image'          => '',
 		'default-text-color'     => 'fff',
 		'width'                  => 2000,
-		'height'                 => 850,
+		'height'                 => 650,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'jetsy_header_style',
 	) ) );

@@ -2,7 +2,7 @@
 //Alternative front page with flashy CSS
 ?>
 <div class="ct" id="home">
-    <div class="ct" id="contact">
+    <div class="ct" id="contact-home">
         <div class="ct" id="wp-site">
             <div class="ct" id="code">
                 <div class="ct" id="resume">
@@ -19,7 +19,7 @@
                         <a href="#wp-site">
                             <li class="icon2 fab fa-wordpress" title="WP Sites"></li>
                         </a>
-                        <a href="#contact">
+                        <a href="#contact-home">
                             <li class="icon2 fas fa-envelope-open" title="Contact"></li>
                         </a>
                         <a href="/wp/bio/">
@@ -27,20 +27,24 @@
                         </a>
 
                     </ul>
+
                     <div class="alt-page" id="p1">
                         <?php $slogan = get_bloginfo('description'); ?>
                         <section class="icon"><?php the_custom_logo(); ?>
                             <span class="title"><?php bloginfo('name'); ?>
                                 <span class="hint"><?php echo $slogan; ?></span>
                         </section>
-
                     </div>
+
+
                     <div class="alt-page" id="p2">
                         <section class="icon fas fa-envelope-open"><span class="title">Contact Me</span>
                             <p class="hint">kc at jenjetson dot com</p>
                             <p class="hint">702.530.5755</p>
                         </section>
                     </div>
+
+
                     <div class="alt-page" id="p3">
                         <section class="icon fab fa-wordpress">
                             <!--                            <span class="hint">WordPress Sites</span>-->

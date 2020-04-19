@@ -2,12 +2,12 @@
 // change the master font size here
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 20) * 1px;
-	font-size: $sizeValue * 1.1rem;
+	font-size: $sizeValue * 1rem;
 }
 
 // Center block
 @mixin center-block {
-	display: block;
+	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -25,6 +25,6 @@
 }
 
 // Column width with margin
-@mixin column-width($numberColumns: 3) {
+@mixin column-width($numberColumns: 2) {
 	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }

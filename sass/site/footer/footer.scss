@@ -10,11 +10,11 @@
 		padding: .1em .3em;
 		font-weight: 700;
 		color: white;
-		text-decoration: underline;
+		text-decoration: none;
 
 		&:hover,
 		&:focus {
-		
+		color: rgba(255,255,255, .6);
 		}
 	}
 

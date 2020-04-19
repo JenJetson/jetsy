@@ -17,6 +17,7 @@ html, body, .alt-page{
     position: absolute;
 }
 
+
 #p1 {
     left: 0;
 }
@@ -105,15 +106,16 @@ ul .icon:hover {
     -o-transform: scale(1.2) !important;
 }
 
+/*  styilng for left side menu */
 ul {
     position: fixed;
     z-index: 1;
     top: 0;
     bottom: 0;
     left: 0;
-    margin: auto;
+    margin: 1.4em;
     height: 280px;
-    width: 10%;
+    width: 5%;
     padding: 0;
     text-align: center;
 }
@@ -124,12 +126,19 @@ ul {
 }
 
 #home-menu .icon2 { /* fixme add responsive for mobile. */
+    vertical-align: middle;
     font-size: 1.3em;
     margin: .8em 0;
     transition: all .5s ease-out !important;
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
+}
+
+#home-menu .icon2:hover{
+    font-size:1.33em;
+    color: rgba(255, 255, 255, .8);
+    text-shadow: 0 .18em .5em grey;
 }
 
 a {

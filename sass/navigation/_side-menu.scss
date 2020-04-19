@@ -1,0 +1,17 @@
+@media screen and (min-width: $query__medium) {
+  .side-menu {
+    display: inline-block;
+    float: left;
+    position: absolute;
+  }
+  .icon2 {
+    padding: .4em 0;
+    font-size: 1.3em;
+    vertical-align: middle;
+  }
+  .icon2:hover{
+    font-size:1.33em;
+    color: rgba(100.0%, 34.5%, 10.2%, 1);
+    text-shadow: 0 .18em .5em lightgrey;
+    }
+}

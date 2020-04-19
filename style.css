@@ -73,7 +73,7 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-	font-size: 2em;
+	font-size: 1.8em;
 	margin: 0.67em 0;
 }
 
@@ -389,7 +389,7 @@ textarea {
 	color: #032f82;
 	font-family: "Open Sans", "Lucinda Grande", "Lucinda Sans Unicode", "Lucinda Sans", Geneva, Arial, sans-serif;
 	font-size: 18px;
-	font-size: 0.99rem;
+	font-size: 0.9rem;
 	line-height: 1.5;
 }
 
@@ -401,7 +401,7 @@ textarea {
 	optgroup,
 	textarea {
 		font-size: 20px;
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 }
 
@@ -550,7 +550,7 @@ pre {
 	background: #eef0f3;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 18.75px;
-	font-size: 1.03125rem;
+	font-size: 0.9375rem;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -561,7 +561,7 @@ pre {
 code, kbd, tt, var {
 	font-family: Monaco, Consolas, "Andasle Mono", "DejaVu Sans Mono", monospace;
 	font-size: 18.75px;
-	font-size: 1.03125rem;
+	font-size: 0.9375rem;
 }
 
 abbr, acronym {
@@ -663,7 +663,7 @@ input[type="submit"] {
 	background: white;
 	color: #032f82;
 	font-size: 20px;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	line-height: 1;
 	padding: .5em 1em;
 }
@@ -960,6 +960,27 @@ a:focus, a:active {
 }
 
 /*--------------------------------------------------------------
+## Side Menu
+--------------------------------------------------------------*/
+@media screen and (min-width: 900px) {
+	.side-menu {
+		display: inline-block;
+		float: left;
+		position: absolute;
+	}
+	.icon2 {
+		padding: .4em 0;
+		font-size: 1.3em;
+		vertical-align: middle;
+	}
+	.icon2:hover {
+		font-size: 1.33em;
+		color: #ff581a;
+		text-shadow: 0 .18em .5em lightgrey;
+	}
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -988,7 +1009,7 @@ a:focus, a:active {
 	color: #21759b;
 	display: block;
 	font-size: 17.5px;
-	font-size: 0.9625rem;
+	font-size: 0.875rem;
 	font-weight: bold;
 	height: auto;
 	left: 5px;
@@ -1023,7 +1044,7 @@ a:focus, a:active {
 
 .aligncenter {
 	clear: both;
-	display: block;
+	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1077,7 +1098,7 @@ a:focus, a:active {
 
 .widget-pages {
 	background: white;
-	display: block;
+	dialay: block;
 }
 
 .entry-content {
@@ -1089,7 +1110,7 @@ a:focus, a:active {
 	.entry-content {
 		margin: 0;
 		/* do not change without jen jetson authority*/
-		padding: 1.5em 9em;
+		padding: 1.5em 7em 1.5em 8em;
 		display: block;
 		background: white;
 		max-width: 100%;
@@ -1156,7 +1177,6 @@ a:focus, a:active {
 		    flex-wrap: wrap;
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
-		width: 100%;
 	}
 	.page.has-sidebar .page-content .entry-content {
 		-ms-flex: 1 0 60%;
@@ -2345,7 +2365,11 @@ button.dropdown-toggle {
 	padding: .1em .3em;
 	font-weight: 700;
 	color: white;
-	text-decoration: underline;
+	text-decoration: none;
+}
+
+.site-footer a:hover, .site-footer a:focus {
+	color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (min-width: 600px) {
@@ -2750,7 +2774,7 @@ object {
 }
 
 .wp-caption img[class*="wp-image-"] {
-	display: block;
+	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
 }

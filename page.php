@@ -14,21 +14,27 @@
 
 get_header();
 ?>
+    <div id="primary" class="content-area">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+        <main id="main" class="site-main">
 
-		
-			<?php
-			while ( have_posts() ) : the_post();
+            <!--            add side menu-->
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'side',
+                'container_class' => 'side-menu'));
+            ?>
+            <!--add page-->
+            <?php
+            while (have_posts()) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+                get_template_part('template-parts/content', 'page');
 
-			endwhile; // End of the loop.
-			?>
+            endwhile; // End of the loop.
+            ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
 <?php
 get_footer();

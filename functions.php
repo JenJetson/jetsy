@@ -319,12 +319,12 @@ function jetsy_scripts()
 
 
     //main stylesheet for site.  all compiled by sass
-    if (!is_page('home')) {
+    if (! is_front_page()) {
         wp_enqueue_style('jetsy-style', get_stylesheet_uri());
     }
 
     //different stylesheet for front page.  not sass compiled
-    if (is_page('home')) {
+    if ( is_front_page() ) {
         wp_enqueue_style('jetsy-stylefront', get_template_directory_uri() . '/stylefront.css');
     }
 

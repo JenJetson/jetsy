@@ -1,4 +1,4 @@
-html, body, .alt-page{
+html, #alt-body, body, .alt-page{
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -9,9 +9,12 @@ html, body, .alt-page{
     -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
     color: #fff;
     overflow: hidden;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
+.hint, .title {
+    font-family: "Roboto", "Arial", sans-serif;
+}
 
 .alt-page {
     position: absolute;
@@ -73,7 +76,7 @@ html, body, .alt-page{
 
 .icon {
     color: #fff;
-    font-size: 32px;
+    font-size: 35px;
     display: block;
 }
 
@@ -81,8 +84,8 @@ ul .icon:hover {
     opacity: 0.5;
 }
 
-.alt-page .icon .title {
-    line-height: 1.8;
+.alt-page .title {
+    line-height: 1.5;
 }
 
 #contact-home:target ul .icon,
@@ -107,28 +110,27 @@ ul .icon:hover {
 }
 
 /*  styilng for left side menu */
-ul {
+ul{
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: .5em;  /* adjust the top margin for menu */
     bottom: 0;
     left: 0;
     margin: 1.4em;
     height: 280px;
-    width: 5%;
     padding: 0;
-    text-align: center;
+
 }
 
 #home-menu li{
-    font-size: .95em;
+
     color: white;
 }
 
 #home-menu .icon2 { /* fixme add responsive for mobile. */
     vertical-align: middle;
     font-size: 1.3em;
-    margin: .8em 0;
+    margin: .5em 0; /*  space between icons in menu */
     transition: all .5s ease-out !important;
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
@@ -140,6 +142,42 @@ ul {
     color: rgba(255, 255, 255, .8);
     text-shadow: 0 .18em .5em grey;
 }
+
+@media screen and (max-width: 600px) {
+    #home-menu .icon2 {
+        margin: .5em 0;
+        font-size: .9em;
+    }
+    .icon img{
+        width: 70px;
+        height: 70px;
+    }
+    .alt-page .title {
+        line-height: 1.1em;
+        font-size: 21px;
+    }
+    .hint{
+        font-size: .81em;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #home-menu .icon2 {
+        margin: .5em 0;
+        font-size: 1.2em;
+    }
+    .icon img{
+        width: 50px;
+        height: 50px;
+    }
+    .alt-page .title {
+        line-height: 1em;
+        font-size: 18px;
+    }
+
+}
+
 
 a {
     text-decoration: none;
@@ -155,8 +193,9 @@ a {
 }
 
 .hint {
-    font-size: 17px;
+    font-size: 16px;
 }
+
 
 #p4 .hint {
     display: inherit !important;
@@ -164,7 +203,6 @@ a {
 
 .hint a {
     color: rgba(255, 255, 255, .9);
-
     transition: all 250ms ease-out;
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
@@ -176,7 +214,7 @@ a {
 }
 
 .hint a:hover {
-    color: #FFF;
+    text-shadow: 0 .18em .5em black;
 }
 
 .line-trough {
@@ -204,7 +242,7 @@ a {
     width: 200px; /* adjust here kari for main content width*/
     /*height: 170px;*/
     height: auto;
-    padding-top: 150px; /* adjust top of page here */
+    padding-top: 220px; /* adjust top of page here */
     margin: auto;
     text-align: center;
     font-size: 80px;
@@ -235,11 +273,18 @@ a {
     transition-delay: 1s;
 }
 
-.alt-page#p1 .icon {
-    height: auto;
-    padding-top: 200px;
+
+@media screen and (max-width: 400px){
+    .alt-page#p1 .icon {
+        padding-top: 50px;
+    }
 }
 
+@media screen and (max-width: 600px){
+    .alt-page#p1 .icon {
+        padding-top: 100px;
+    }
+}
 
 .alt-page#p3 .icon {
     height: auto;
@@ -247,14 +292,27 @@ a {
     color: rgba(0, 191, 255, 1);
 }
 
-#p4 .icon {
-    height: auto;
-    padding-top: 100px;
+/* ADUST THE DISTANCE FROM TOP ON EACH PAGE */
+
+#p1 .icon{  /* adjust the 'home' page distance from top */
+    padding-top: 160px;
 }
 
-#p5 .icon {
-    height: auto;
-    padding-top: 50px;
+#p2 .icon{ /* adjust the 'contact me' page distance from top */
+    padding-top: 150px;
+}
+
+
+/*#p3 .icon {  !* adjust the 'wordpress page' distance from top *!*/
+/*    padding-top: 50px;*/
+/*}*/
+
+#p4 .icon {  /* adjust the 'code page' distance from top */
+    padding-top: 120px;
+}
+
+#p5 .icon { /* adjust 'resume page' distance from top */
+    padding-top: 100px;
 }
 
 #home-menu a{

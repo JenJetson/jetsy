@@ -1536,7 +1536,7 @@ button.dropdown-toggle {
 		background: none;
 	}
 	.main-navigation ul li a {
-		padding: .4em 1em;
+		padding: .4em .6em;
 	}
 }
 
